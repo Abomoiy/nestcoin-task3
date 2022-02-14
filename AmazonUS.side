@@ -1,0 +1,121 @@
+{
+  "id": "b944768a-5e3d-4f11-b3d3-467464a32109",
+  "version": "2.0",
+  "name": "AmazonUS",
+  "url": "https://www.amazon.com",
+  "tests": [{
+    "id": "0ef7ddb7-e87b-4602-9771-9fcc8544244c",
+    "name": "Shoes",
+    "commands": [{
+      "id": "46abca6b-55b1-4389-b394-c778057a3dc3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0cecb052-1c38-45b4-bd64-6b5fe2a2714c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x838",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fef3bf0b-9bcb-43d7-af34-0d48623ba202",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "shoes"
+    }, {
+      "id": "5980dada-8848-4c0f-8e53-b6021c1280ce",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9e8b152-20e1-4cf4-afd9-fff2f254cb34",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Amazon.com : shoes",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "67cc8679-9cc8-4126-8331-1ffab89a0140",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sg-col-4-of-12:nth-child(5) .a-size-base-plus:nth-child(1)",
+      "targets": [
+        ["css=.sg-col-4-of-12:nth-child(5) .a-size-base-plus:nth-child(1)", "css:finder"],
+        ["xpath=//div[@id='search']/div/div/div/span[3]/div[2]/div[5]/div/div/div/div/div[2]/div/h2/a/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/div[2]/div/h2/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe99c34d-bd62-4f91-b721-23699353399b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=breadcrumb-back-link",
+      "targets": [
+        ["id=breadcrumb-back-link", "id"],
+        ["linkText=Back to results", "linkText"],
+        ["css=#breadcrumb-back-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Back to results')]", "xpath:link"],
+        ["xpath=//a[@id='breadcrumb-back-link']", "xpath:attributes"],
+        ["xpath=//div[@id='wayfinding-breadcrumbs_feature_div']/ul/li[2]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.amazon.com/s?k=shoes&crid=1B9G1W223WPH&sprefix=shoes%2Caps%2C679&ref=nb_sb_noss_2')]", "xpath:href"],
+        ["xpath=//li[2]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back to results')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3d73e02-370d-4052-82ab-47b16610f3a6",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=breadcrumb-back-link",
+      "targets": [
+        ["id=breadcrumb-back-link", "id"],
+        ["linkText=Back to results", "linkText"],
+        ["css=#breadcrumb-back-link", "css:finder"],
+        ["xpath=//a[contains(text(),'Back to results')]", "xpath:link"],
+        ["xpath=//a[@id='breadcrumb-back-link']", "xpath:attributes"],
+        ["xpath=//div[@id='wayfinding-breadcrumbs_feature_div']/ul/li[2]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.amazon.com/s?k=shoes&crid=1B9G1W223WPH&sprefix=shoes%2Caps%2C679&ref=nb_sb_noss_2')]", "xpath:href"],
+        ["xpath=//li[2]/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Back to results')]", "xpath:innerText"]
+      ],
+      "value": "Back to results"
+    }, {
+      "id": "1a46c220-8326-479a-95d7-fdbd7734cbd1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "25d23f1f-69b0-4073-b9e0-13f16acc765b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0ef7ddb7-e87b-4602-9771-9fcc8544244c"]
+  }],
+  "urls": ["https://www.amazon.com/"],
+  "plugins": []
+}
